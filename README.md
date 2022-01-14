@@ -6,7 +6,7 @@ _valiant effort to join project underdog_
 
 ###### [long informative read re: computer file system types and how they work](https://www.freecodecamp.org/news/file-systems-architecture-explained/)
 
-###### [mentorship support max matthews courtesy hack upstate careers in code](maxmatthe.ws)
+###### [mentorship support max matthews courtesy hack upstate careers in code](https://maxmatthe.ws/)
 
 <br>
 
@@ -36,7 +36,8 @@ _valiant effort to join project underdog_
 ###### [view full practice problems list | complete as many practice problems as you can](https://paper.dropbox.com/doc/Programming-practice-problems-Qp6jAVBXAuDZWiz5x6r9J)
 
 <br>
-<br>
+
+---
 
 ### <span style="color: #00FFFF">EFFICIENT CODING PRACTICES</span><br>
 
