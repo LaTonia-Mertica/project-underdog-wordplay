@@ -49,7 +49,7 @@ regular expressions aka regex (pronounced redge ex) may be used to solve many of
 
 #### **RESOURCE:** <a href="https://www.regexpal.com/">regexpal.com</a>
 
-#### **OPTION:** `/.\*ghtly/i`
+#### **OPTION:** `/.*ghtly/i`
 
 <br>
 
