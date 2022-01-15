@@ -39,6 +39,24 @@ _valiant effort to join project underdog_
 
 ---
 
+### <span style="color: #00FFFF">BEAUTIFUL CLEAN CODE</span><br>
+
+code computers run is one objective of coding. clean code is code that not only completes the objective or solves the problem, but is also readable and understandable by other programmers. meaning, clean code is readable, runnable, understandable code.
+| max matthews, tuzag, inc. chief technical officer
+<br>
+<br>
+
+#### **QUESTION:** Can I read your code and understand what it is doing?
+
+#### **OPTIONS:** _if anyone answers no to that question re: your code,_ consider:
+
+- refactoring
+- tweaking indentation
+- separating code blocks into separate functions
+- adding comments
+
+<br>
+
 ### <span style="color: #00FFFF">EFFICIENT CODING PRACTICES</span><br>
 
 regular expressions aka regex (pronounced redge ex) may be used to solve many of the questions posed, however, using regex is generally deemed unnecessary because solving them with javascript is sufficient

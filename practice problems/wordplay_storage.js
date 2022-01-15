@@ -61,11 +61,7 @@ const readlines = async () => {
       word.includes("O") &&
       word.includes("U")
     ) {
-      if (!shortest_word) {
-        shortest_word = word;
-      }
-
-      if (word.length < shortest_word.length) {
+      if (!shortest_word || word.length < shortest_word.length) {
         shortest_word = word;
       }
     }
@@ -143,6 +139,13 @@ const readlines = async () => {
 
   // empty array defined/assigned to store each letter as applicable per code block parameters/guidelines
   let lettersThatDontHaveWordsThatDoubleThem = [];
+  // empty object to store key(letter)-value(word) pairs
+  let wordLetterPair = {};
+  // better visualization of what trying to do w/the code
+  //{
+  // "a" : "aardvark",
+  // "b": "abbey"
+  // }
 
   // for of loop to check each letter of the alphabet in turn
   for (const letter of alphabet) {
@@ -153,6 +156,8 @@ const readlines = async () => {
       //every word for every letter
       if (word.includes(`${letter}${letter}`)) {
         doubleLetterWordExists = true;
+        // sets condition to output key of letter to value of word from variable wordLetterPair
+        wordLetterPair[letter] = word;
         break; //stops the word loop but not the letter loop
       }
     } //ends the word loop
@@ -192,9 +197,7 @@ const readlines = async () => {
       "Out of q, x and z, there is a tie between at least two letters."
     );
   }
-
   console.log(`The longest palindrom is: ${longest_palindrome}`);
-
   console.log("Words containing 'type':", typeCounter);
   //   console.log("Words containing 'type':", type_substr.length);
   console.log("Words ending with 'ghtly':", ghtly_words);
@@ -204,5 +207,6 @@ const readlines = async () => {
     `Letters that don't have words where the letter repeats itself:`,
     lettersThatDontHaveWordsThatDoubleThem
   );
+  console.log("Words that have double letters", wordLetterPair);
 };
 readlines();
