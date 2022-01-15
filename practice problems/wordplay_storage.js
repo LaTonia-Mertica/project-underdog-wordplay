@@ -94,6 +94,7 @@ const readlines = async () => {
       }
     } //end of each letter loop
 
+
     // immutable variable assigned value of word that is respectively taken apart by each charcter aka letter THEN those characters arranged in the opposite order THEN those characters put back together to allow the word(s) to be read front to back AND back to front
     const reversedWord = word.split("").reverse().join("");
     if (word === reversedWord) {
@@ -136,6 +137,26 @@ const readlines = async () => {
     "Y",
     "Z",
   ];
+
+  // variable assigned empty array to store words with letters that repeat at least 3 times 
+  let repeatLetter_words = [];
+  
+  // outer for of loop to iterate through all words in external text file THEN variable assigned/initialized at zero to allow later increment capability
+  for (const word of allWords) {
+    let num_doubleLetters = 0;
+
+    // inner for of loop to iterate through letters of alphabet THEN increment variable initialized at zero as letters meet the conditional
+    for (const letter of alphabet) {
+      if (word.includes(`${letter}${letter}`)){
+        num_doubleLetters++    
+      }
+    }
+    // when letters exist at least 3 times add the word that contains the letter(s) to the variable assigned the empty array
+    if (num_doubleLetters >= 3) {
+      repeatLetter_words.push(word)
+    }
+  }
+
 
   // empty array defined/assigned to store each letter as applicable per code block parameters/guidelines
   let lettersThatDontHaveWordsThatDoubleThem = [];
@@ -208,5 +229,6 @@ const readlines = async () => {
     lettersThatDontHaveWordsThatDoubleThem
   );
   console.log("Words that have double letters", wordLetterPair);
+  console.log(repeatLetter_words)
 };
 readlines();
